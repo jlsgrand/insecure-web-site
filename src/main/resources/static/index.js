@@ -4,7 +4,7 @@ document.getElementById('sqli-form').addEventListener('submit', (event) => {
     const request = new XMLHttpRequest();
 
     // Open a new connection, using the GET request on the URL endpoint
-    request.open('POST', 'http://localhost:8080/api', true);
+    request.open('POST', 'https://insecure-website.herokuapp.com/api', true);
 
     // Handle request response
     request.onload = function () {
@@ -24,7 +24,7 @@ document.getElementById('sqli-form').addEventListener('submit', (event) => {
 const request = new XMLHttpRequest();
 
 // Open a new connection, using the GET request on the URL endpoint
-request.open('GET', 'http://localhost:8080/api', true);
+request.open('GET', 'https://insecure-website.herokuapp.com/api', true);
 
 // Handle request response
 request.onload = function () {
